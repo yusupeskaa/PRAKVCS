@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Version Control System</title>
+</head>
+<body>
+
+    <h1>Praktikum Version Control System</h1>
+
+    <p>Selamat datang di halaman praktikum Git dan GitHub.</p>
+
+    <p id="pesan">Klik tombol di bawah ini.</p>
+
+    <button id="tombolPesan">Klik Saya</button>
+
+    <script>
+        const tombolPesan = document.getElementById("tombolPesan");
+        const pesan = document.getElementById("pesan");
+
+        tombolPesan.addEventListener("click", function () {
+            pesan.textContent = "Berhasil! File JavaScript sudah terhubung.";
+        });
+    </script>
+
+</body>
+</html>
