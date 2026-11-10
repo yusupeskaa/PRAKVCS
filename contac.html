@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Website Saya</title>
+
+    <!-- Hubungkan CSS -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Hubungkan JavaScript -->
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Hubungi Kami</h1>
+        <p>Kirimkan pertanyaan atau pesan kepada kami.</p>
+    </header>
+
+    <main>
+        <h2>Formulir Kontak</h2>
+
+        <form id="contactForm">
+
+            <p>
+                <label for="nama">Nama</label><br>
+                <input type="text" id="nama"
+                    placeholder="Masukkan nama kamu" required>
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email"
+                    placeholder="nama@email.com" required>
+            </p>
+
+            <p>
+                <label for="pesanKontak">Pesan</label><br>
+                <textarea id="pesanKontak" rows="5"
+                    placeholder="Tuliskan pesan kamu..."
+                    required></textarea>
+            </p>
+
+            <button type="submit">Kirim Pesan</button>
+
+            <p id="statusForm"></p>
+        </form>
+
+        <p>
+            <a href="index.html">Kembali ke halaman utama</a>
+        </p>
+    </main>
+
+</body>
+</html>
