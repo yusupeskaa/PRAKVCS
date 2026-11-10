@@ -24,6 +24,36 @@ body {
     margin: 0 0 8px;
 }
 
+/* Menu navigasi */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.navbar a {
+    padding: 9px 18px;
+    color: #243042;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #2563eb;
+}
+
+.navbar a.active {
+    color: white;
+    background-color: #0f766e;
+}
+
 /* Konten utama */
 .container {
     width: min(900px, 92%);
@@ -37,6 +67,11 @@ body {
     box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
 }
 
+.card h2 {
+    color: #2563eb;
+}
+
+/* Tombol */
 button {
     padding: 11px 18px;
     border: 0;
@@ -45,12 +80,14 @@ button {
     background-color: #2563eb;
     font-size: 1rem;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #1d4ed8;
 }
 
+/* Pesan JavaScript */
 #pesan {
     font-weight: bold;
     color: #0f766e;
@@ -58,9 +95,11 @@ button:hover {
 
 /* Bagian kaki halaman */
 .footer {
+    margin-top: 40px;
     padding: 18px;
     text-align: center;
     color: #475569;
+    background-color: #e2e8f0;
 }
 
 /* Penyesuaian untuk layar kecil */
@@ -73,7 +112,50 @@ button:hover {
         font-size: 1.6rem;
     }
 
+    .navbar {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
     .card {
         padding: 20px;
     }
+}
+
+/* Tampilan formulir kontak */
+form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+#statusForm {
+    font-weight: bold;
+    color: #0f766e;
 }

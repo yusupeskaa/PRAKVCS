@@ -5,54 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact - Website Saya</title>
+    <title>Contact | Praktikum Version Control System</title>
 
-    <!-- Hubungkan CSS -->
     <link rel="stylesheet" href="assets/style.css">
-
-    <!-- Hubungkan JavaScript -->
     <script src="assets/script.js" defer></script>
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Hubungi Kami</h1>
         <p>Kirimkan pertanyaan atau pesan kepada kami.</p>
     </header>
 
-    <main>
-        <h2>Formulir Kontak</h2>
+    <!-- Menu Navigasi -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contac.html" class="active">Contact</a>
+    </nav>
 
-        <form id="contactForm">
+    <main class="container">
 
-            <p>
-                <label for="nama">Nama</label><br>
-                <input type="text" id="nama"
-                    placeholder="Masukkan nama kamu" required>
-            </p>
-
-            <p>
-                <label for="email">Email</label><br>
-                <input type="email" id="email"
-                    placeholder="nama@email.com" required>
-            </p>
+        <section class="card">
+            <h2>Formulir Kontak</h2>
 
             <p>
-                <label for="pesanKontak">Pesan</label><br>
-                <textarea id="pesanKontak" rows="5"
-                    placeholder="Tuliskan pesan kamu..."
-                    required></textarea>
+                Silakan isi formulir berikut apabila ingin
+                menyampaikan pertanyaan, saran, atau pesan.
             </p>
 
-            <button type="submit">Kirim Pesan</button>
+            <form id="contactForm">
 
-            <p id="statusForm"></p>
-        </form>
+                <p>
+                    <label for="nama">Nama</label><br>
+                    <input type="text" id="nama"
+                        placeholder="Masukkan nama kamu" required>
+                </p>
 
-        <p>
-            <a href="index.html">Kembali ke halaman utama</a>
-        </p>
+                <p>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email"
+                        placeholder="nama@email.com" required>
+                </p>
+
+                <p>
+                    <label for="pesanKontak">Pesan</label><br>
+                    <textarea id="pesanKontak" rows="5"
+                        placeholder="Tuliskan pesan kamu..."
+                        required></textarea>
+                </p>
+
+                <button type="submit">Kirim Pesan</button>
+
+                <p id="statusForm"></p>
+            </form>
+        </section>
+
     </main>
+
+    <footer class="footer">
+        <p>Praktikum Version Control System 2026</p>
+    </footer>
 
 </body>
 </html>

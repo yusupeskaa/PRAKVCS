@@ -5,23 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About Us - Website Saya</title>
+    <title>About Us | Praktikum Version Control System</title>
 
-    <!-- Menghubungkan CSS -->
     <link rel="stylesheet" href="assets/style.css">
-
-    <!-- Menghubungkan JavaScript -->
     <script src="assets/script.js" defer></script>
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Tentang Kami</h1>
         <p>Mengenal lebih dekat website kami</p>
     </header>
 
-    <main>
-        <section>
+    <!-- Menu Navigasi -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about_us.html" class="active">About Us</a>
+        <a href="contac.html">Contact</a>
+    </nav>
+
+    <main class="container">
+
+        <section class="card">
             <h2>Siapa Kami?</h2>
             <p>
                 Selamat datang di website kami.
@@ -30,7 +35,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Visi Kami</h2>
             <p>
                 Menyediakan informasi yang bermanfaat,
@@ -39,7 +44,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Misi Kami</h2>
             <ul>
                 <li>Menyajikan informasi yang jelas dan bermanfaat.</li>
@@ -48,7 +53,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Tujuan Website</h2>
             <p>
                 Website ini merupakan proyek pembelajaran
@@ -57,13 +62,17 @@
             </p>
         </section>
 
-        <nav>
-            <p><a href="index.html">Halaman Utama</a></p>
-            <p><a href="contac.html">Hubungi Kami</a></p>
-        </nav>
+        <section class="card">
+            <h2>Interaksi Pengunjung</h2>
+            <p id="pesan">Terima kasih telah mengunjungi halaman About Us.</p>
+            <button id="tombolPesan" type="button">Klik Saya</button>
+        </section>
 
-        <button id="tombolKlik" type="button">Klik Saya</button>
     </main>
+
+    <footer class="footer">
+        <p>Praktikum Version Control System 2026</p>
+    </footer>
 
 </body>
 </html>
