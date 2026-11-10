@@ -5,25 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praktikum Version Control System</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-    <h1>Praktikum Version Control System</h1>
+    <header class="header">
+        <h1>Praktikum Version Control System</h1>
+        <p>Belajar Git dan GitHub</p>
+    </header>
 
-    <p>Selamat datang di halaman praktikum Git dan GitHub.</p>
+    <main class="container">
+        <section class="card">
+            <h2>Selamat Datang</h2>
+            <p>Ini adalah halaman praktikum Git.</p>
 
-    <p id="pesan">Klik tombol di bawah ini.</p>
+            <p id="pesan">Klik tombol di bawah ini.</p>
 
-    <button id="tombolPesan">Klik Saya</button>
+            <button id="tombolPesan">Klik Saya</button>
+        </section>
+    </main>
 
-    <script>
-        const tombolPesan = document.getElementById("tombolPesan");
-        const pesan = document.getElementById("pesan");
+    <footer class="footer">
+        <p>Praktikum Version Control System 2026</p>
+    </footer>
 
-        tombolPesan.addEventListener("click", function () {
-            pesan.textContent = "Berhasil! File JavaScript sudah terhubung.";
-        });
-    </script>
+    <!-- Menghubungkan file JavaScript -->
+    <script src="assets/script.js"></script>
 
 </body>
 </html>
